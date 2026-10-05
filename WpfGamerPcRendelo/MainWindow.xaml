@@ -1,0 +1,362 @@
+﻿<Window x:Class="WpfGamerPcRendelo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGamerPcRendelo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="400">
+    <Grid>
+        <Border
+            Background="Black"
+            Padding="20"
+        >
+            <StackPanel
+                Background="White"
+            >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Text="Gamer PC Rendelő"
+                        TextAlignment="Center"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Margin="10,10,10,10"
+                        Padding="10,20,10,20"
+                        Background="Black"
+                        Foreground="White"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="0"
+                    />
+                    <TextBlock
+                        Text="Név"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="1"
+                    />
+                    <TextBox
+                        x:Name="tbName"
+                        FontSize="20"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Background="Black"
+                        Foreground="White"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="2"
+                    />
+                    <TextBlock
+                        Text="Életkor"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3"
+                    />
+                    <TextBox
+                        x:Name="tbAge"
+                        FontSize="20"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Background="Black"
+                        Foreground="White"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="4"
+                    />
+                    <TextBlock
+                        Text="E-Mail"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="5"
+                    />
+                    <TextBox
+                        x:Name="tbEmail"
+                        FontSize="20"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Background="Black"
+                        Foreground="White"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="6"
+                    />
+                    <TextBlock
+                        Text="Videokártya"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="1"
+                        Grid.Row="7"
+                    />
+                    <RadioButton
+                        x:Name="rbGpu1"
+                        GroupName="gpu"
+                        Content="RTX 4060 - 130 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="8"
+                    />
+                    <RadioButton
+                        x:Name="rbGpu2"
+                        GroupName="gpu"
+                        Content="RTX 4070 - 220 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="9"
+                    />
+                    <RadioButton
+                        x:Name="rbGpu3"
+                        GroupName="gpu"
+                        Content="RTX 4080 - 400 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="10"
+                    />
+                    <TextBlock
+                        Text="Processzor"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="0"
+                        Grid.Row="7"
+                    />
+                    <ComboBox
+                        x:Name="combCpu"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Padding="10,2,10,20"
+                        Margin="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="8"
+                    >
+                        <ComboBoxItem>Intel Core i5 - 70 000 Ft</ComboBoxItem>
+                        <ComboBoxItem>Intel Core i7 - 110 000 Ft</ComboBoxItem>
+                        <ComboBoxItem>AMD Ryzen 5 - 65 000 Ft</ComboBoxItem>
+                        <ComboBoxItem>AMD Ryzen 7 - 105 000 Ft</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock
+                        Text="Memória"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="0"
+                        Grid.Row="11"
+                    />
+                    <RadioButton
+                        x:Name="rbRam1"
+                        GroupName="ram"
+                        Content="16 GB - 20 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="12"
+                    />
+                    <RadioButton
+                        x:Name="rbRam2"
+                        GroupName="ram"
+                        Content="32 GB - 35 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="13"
+                    />
+                    <RadioButton
+                        x:Name="rbRam3"
+                        GroupName="ram"
+                        Content="64 GB - 65 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="14"
+                    />
+                    <TextBlock
+                        Text="Darabszám"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="16"
+                    />
+                    <TextBox
+                        x:Name="tbAmount"
+                        FontSize="20"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Background="Black"
+                        Foreground="White"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="17"
+                    />
+                    <TextBlock
+                        Text="Extrák"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="1"
+                        Grid.Row="11"
+                    />
+                    <CheckBox
+                        x:Name="cbExtra1"
+                        Content="RGB Világítás - + 15 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="12"
+                    />
+                    <CheckBox
+                        x:Name="cbExtra2"
+                        Content="Windows 11 - + 45 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="13"
+                    />
+                    <CheckBox
+                        x:Name="cbExtra3"
+                        Content="Gamer Billentyűzet - + 25 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="14"
+                    />
+                    <CheckBox
+                        x:Name="cbExtra4"
+                        Content="Gamer Egér - + 18 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="15"
+                    />
+                    <TextBlock
+                        Text="Garancia"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="0"
+                        Grid.Row="18"
+                    />
+                    <RadioButton
+                        x:Name="cbWarranty1"
+                        GroupName="warranty"
+                        IsChecked="True"
+                        Content="Alap 1 Év - Ingyenes"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="19"
+                    />
+                    <RadioButton
+                        x:Name="cbWarranty2"
+                        GroupName="warranty"
+                        Content="3 Év Garancia - +30 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="20"
+                    />
+                    <RadioButton
+                        x:Name="cbWarranty3"
+                        GroupName="warranty"
+                        Content="5 Év Garancia - +60 000 Ft"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="0"
+                        Grid.Row="21"
+                    />
+                    <TextBlock
+                        Text="Feltételek"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Padding="20,4,20,4"
+                        Grid.Column="1"
+                        Grid.Row="18"
+                    />
+                    <CheckBox
+                        x:Name="cbTerms"
+                        Content="Eladom a lelkem"
+                        FontSize="10"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.Column="1"
+                        Grid.Row="19"
+                    />
+                    <Button
+                        x:Name="btnSubmit"
+                        Content="Tovább a fizetéshez"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Margin="10,2,10,2"
+                        Padding="10,2,10,2"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="22"
+                        HorizontalAlignment="Center"
+                        Background="White"
+                        BorderBrush="Black"
+                        BorderThickness="4"
+                        Click="btnSubmit_Click"
+                    />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
